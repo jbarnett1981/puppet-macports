@@ -1,0 +1,37 @@
+{
+  "name": "edestecd-macports",
+  "version": "0.0.1",
+  "author": "Chris Edester",
+  "summary": "Puppet Module for managing MacPorts",
+  "license": "GPLv3+",
+  "source": "https://github.com/edestecd/puppet-macports.git",
+  "project_page": "https://github.com/edestecd/puppet-macports",
+  "issues_url": "https://github.com/edestecd/puppet-macports/issues",
+  "description": "Puppet Module to install/update MacPorts on OS X",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Darwin",
+      "operatingsystemrelease": [
+        "12.x",
+        "13.x",
+        "14.x"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": "3.x"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.1.0"
+    }
+  ]
+}
