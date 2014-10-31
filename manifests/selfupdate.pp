@@ -15,7 +15,7 @@ class macports::selfupdate (
 
   validate_re($update_period, '^(hourly|daily|weekly|monthly|never)$')
   validate_string($update_range)
-  validate_re("${update_repeat}", '^\d+$')
+  validate_re("${update_repeat}", '^\d+$') # lint:ignore:only_variable_string
 
   schedule { 'macports_selfupdate':
     period => $update_period,

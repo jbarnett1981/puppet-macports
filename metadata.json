@@ -1,6 +1,6 @@
 {
   "name": "edestecd-macports",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Chris Edester",
   "summary": "Puppet Module for managing MacPorts",
   "license": "GPLv3+",
