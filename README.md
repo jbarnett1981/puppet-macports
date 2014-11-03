@@ -1,6 +1,8 @@
 macports
 ===============
 
+[![Puppet Forge](http://img.shields.io/puppetforge/v/edestecd/macports.svg)](https://forge.puppetlabs.com/edestecd/macports)
+
 ####Table of Contents
 
 1. [Overview](#overview)
@@ -42,10 +44,17 @@ as well as keep the ports tree up to date.
 
 ###Beginning with macports
 
-Only install latest MacPorts (minimal)
+Only install latest MacPorts (you need it for package)
 
 ```puppet
-include macports
+class mysql::install {
+  require macports
+
+  package { 'mysql5-server':
+    ensure   => installed,
+    provider => macports,
+  }
+}
 ```
 
 ##Usage
