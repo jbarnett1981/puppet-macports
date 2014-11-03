@@ -24,7 +24,7 @@ class macports::selfupdate (
   }
 
   exec { 'port selfupdate':
-    path     => ['/opt/local/bin'],
+    path     => ['/opt/local/bin', '/opt/local/sbin', '/bin', '/usr/bin', '/sbin', '/usr/sbin', '/usr/local/bin', '/usr/local/sbin'],
     schedule => 'macports_selfupdate',
   }
 
