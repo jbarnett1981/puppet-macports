@@ -1,3 +1,7 @@
+2014-11-04 (0.1.0)  Chris Edester
+        * Remove extension from package name
+        * if updating from older version - this will cause reinstall, which should not cause any issues
+
 2014-11-03 (0.0.4)  Chris Edester
         * Update README; add badges
 

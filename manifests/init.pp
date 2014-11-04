@@ -17,7 +17,8 @@ class macports (
   $install_url = $macports::params::install_url,
 ) inherits macports::params {
 
-  $pkg = "MacPorts-${version}-${::macosx_productversion_major}-${macports::params::codename}.pkg"
+  $pkg_name = "MacPorts-${version}-${::macosx_productversion_major}-${macports::params::codename}"
+  $pkg      = "${pkg_name}.pkg"
 
   $real_install_url = $install_url ? {
     undef   => "${base_url}/${$pkg}",
@@ -28,7 +29,7 @@ class macports (
   validate_string($real_install_url)
 
   if str2bool($::xcode_clt_installed) {
-    package { $pkg:
+    package { $pkg_name:
       ensure   => installed,
       provider => pkgdmg,
       source   => $real_install_url,
