@@ -1,6 +1,8 @@
 macports
 ===============
 
+[![Puppet Forge](http://img.shields.io/puppetforge/v/jbarnett1981/macports.svg)](https://forge.puppetlabs.com/jbarnett1981/macports)
+
 ####Table of Contents
 
 1. [Overview](#overview)
