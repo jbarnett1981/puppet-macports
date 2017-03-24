@@ -4,7 +4,7 @@
 
 class macports::params {
 
-  $version     = '2.3.2'
+  $version     = '2.4.1'
   $base_url    = 'https://distfiles.macports.org/MacPorts'
   $install_url = undef
 
@@ -16,8 +16,12 @@ class macports::params {
       $codename = 'Mavericks'
     } elsif versioncmp($::macosx_productversion_major, '10.10') == 0 {
       $codename = 'Yosemite'
+    } elsif versioncmp($::macosx_productversion_major, '10.11') == 0 {
+      $codename = 'ElCapitan'
+    } elsif versioncmp($::macosx_productversion_major, '10.12') == 0 {
+      $codename = 'Sierra'
     } else {
-      fail("The ${module_name} module only supports 'Mountain Lion', 'Mavericks', 'Yosemite‎'.")
+      fail("The ${module_name} module only supports 'Mountain Lion', 'Mavericks', 'Yosemite', 'ElCapitan', 'Sierra‎'.")
     }
   } else {
     fail("The ${module_name} module is not supported on a ${::osfamily} based system.")

@@ -1,7 +1,7 @@
 {
-  "name": "edestecd-macports",
-  "version": "0.1.0",
-  "author": "Chris Edester",
+  "name": "puppet-macports",
+  "version": "0.2.0",
+  "author": "Julian Barnett",
   "summary": "Puppet Module for managing MacPorts",
   "license": "GPLv3+",
   "source": "https://github.com/edestecd/puppet-macports.git",
@@ -14,7 +14,9 @@
       "operatingsystemrelease": [
         "12.x",
         "13.x",
-        "14.x"
+        "14.x",
+	"15.x",
+	"16.x"
       ]
     }
   ],

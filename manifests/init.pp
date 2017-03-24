@@ -28,7 +28,7 @@ class macports (
   validate_string($version)
   validate_string($real_install_url)
 
-  if str2bool($::xcode_clt_installed) {
+  if $::xcode_clt_installed {
     package { $pkg_name:
       ensure   => installed,
       provider => pkgdmg,

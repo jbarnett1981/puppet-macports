@@ -1,8 +1,6 @@
 macports
 ===============
 
-[![Puppet Forge](http://img.shields.io/puppetforge/v/edestecd/macports.svg)](https://forge.puppetlabs.com/edestecd/macports)
-
 ####Table of Contents
 
 1. [Overview](#overview)
@@ -22,8 +20,8 @@ Puppet Module for managing MacPorts
 
 ##Module Description
 
-The macports module provides a few classes to manage MacPorts on OS X.  
-These allow you to install the proper pkg for your version of OS X,  
+The macports module provides a few classes to manage MacPorts on OS X.
+These allow you to install the proper pkg for your version of OS X,
 as well as keep the ports tree up to date.
 
 ##Setup
@@ -63,7 +61,7 @@ class mysql::install {
 
 ```puppet
 class { 'macports':
-  version => '2.3.2',
+  version => '2.4.1',
 }
 ```
 
@@ -91,13 +89,12 @@ class { 'macports::selfupdate':
 
 ##Limitations
 
-This module has been built on and tested against Puppet 3.2.4 and higher.  
+This module has been built on and tested against Puppet 3.2.4 and higher.
 While I am sure other versions work, I have not tested them.
 
-MacPorts is only supported on Apple Mac OS X.  
-This module has been tested on 10.8 "Mountain Lion" and newer (including Yosemite).
+MacPorts is only supported on Apple Mac OS X.
+This module has been tested on 10.8 "Mountain Lion" and newer including Yosemite, El Capitan and Sierra.
 
-No plans to support other versions (unless you add it :)..
 
 ##Development
 
@@ -105,4 +102,5 @@ Pull Requests welcome
 
 ##Contributors
 
-Chris Edester (edestecd)
+Chris Edester (edestecd) original author
+Julian Barnett (jbarnett1981) updated 3/24/17

@@ -1,3 +1,8 @@
+2017-03-24 (0.2.0) Julian Barnett
+		* Refactored macports.rb to use pkgutil instead of /var/db/receipts
+		* Added support for 10.11, 10.12
+		* Updated base version to 2.4.1
+
 2014-11-04 (0.1.0)  Chris Edester
         * Remove extension from package name
         * if updating from older version - this will cause reinstall, which should not cause any issues
