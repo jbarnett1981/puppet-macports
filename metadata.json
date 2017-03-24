@@ -1,5 +1,5 @@
 {
-  "name": "puppet-macports",
+  "name": "jbarnett1981-macports",
   "version": "0.2.0",
   "author": "Julian Barnett",
   "summary": "Puppet Module for managing MacPorts",
